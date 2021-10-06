@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import { Card, Container, Row } from 'react-bootstrap';
+import { Container, Row } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import Cards from './Cards';
 
 const Course = () => {
@@ -10,7 +11,6 @@ const Course = () => {
             .then(data => setCourses(data))
     }, []);
     const homeCourses = courses.slice(0, 4);
-    console.log(homeCourses);
 
     return (
         <Container>
@@ -22,7 +22,11 @@ const Course = () => {
                     key={course.id}
                 ></Cards>)}
             </Row>
-            <div className="text-center mb-5"><button className="mt-3 mb-5 btn btn_custom btn-lg">See All Courses</button></div>
+            <div className="text-center mb-5">
+                <Link to="/courses">
+                    <button className="mt-3 mb-5 btn btn_custom btn-lg">See All Courses</button>
+                </Link>
+            </div>
 
 
         </Container>

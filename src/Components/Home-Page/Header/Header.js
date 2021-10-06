@@ -13,7 +13,7 @@ const Header = () => {
                         <button className="rounded btn btn_custom mt-3">View Courses</button>
                     </Col>
                     <Col md={7}>
-                        <img src="/images/header.svg" alt="Header Illustration" />
+                        <img src="/images/header.svg" alt="Header Illustration" className="img-fluid" />
                     </Col>
                 </Row>
             </Container>
