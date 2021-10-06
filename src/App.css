@@ -28,3 +28,34 @@ color: #9e5744!important;
   background-color: #9e5744!important;
   border-color: #9e5744!important;
 }
+.bg_primary{
+  color: #fff!important;
+  background-color: #c76e55!important;
+  border-color: #c76e55!important;
+}
+.primary_clr{
+  color: #c76e55!important;
+}
+.d_flex{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.plane-icon svg{
+  width: 30px!important;
+  height: 30px;
+}
+.my_height{
+  height: 48px!important;
+}
+.my_z_index{
+  z-index: 20!important;
+}
+.copywrite{
+  margin-top: 15px;
+  margin-bottom: 0;
+}
+.icon-gold{
+color: goldenrod;
+}

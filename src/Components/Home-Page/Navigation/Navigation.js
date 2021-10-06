@@ -1,22 +1,23 @@
 import React from 'react';
-import logo from '../../logo.svg';
+import logo from '../../../logo.svg';
 import { Container, Nav, Navbar } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { Link } from 'react-router-dom';
 
 const Navigation = () => {
     return (
         <Navbar bg="light" expand="lg">
             <Container>
-                <Navbar.Brand href="#home">
+                <Link to="/" className="navbar-brand">
                     <img src={logo} alt="" width="170" height="56" className="d-inline-block align-top" />
-                </Navbar.Brand>
+                </Link>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
                     <Nav >
-                        <Nav.Link href="#home" className="fs-5  font_rale">Home</Nav.Link>
-                        <Nav.Link href="#about" className="fs-5 font_rale">About</Nav.Link>
-                        <Nav.Link href="#courses" className="fs-5  font_rale">Courses</Nav.Link>
-                        <Nav.Link href="#link" className="fs-5  font_rale">link</Nav.Link>
+                        <Link to="/" className="fs-5  font_rale text-decoration-none nav-link">Home</Link>
+                        <Link to="/about" className="fs-5  font_rale text-decoration-none nav-link">About</Link>
+                        <Link to="/courses" className="fs-5  font_rale text-decoration-none nav-link">Courses</Link>
+                        <Link to="/contact" className="fs-5  font_rale text-decoration-none nav-link">Contact</Link>
 
                     </Nav>
                 </Navbar.Collapse>

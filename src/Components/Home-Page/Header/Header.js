@@ -1,6 +1,5 @@
 import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
-import illustration from '../../Media/header.svg';
 import './Header.css';
 
 const Header = () => {
@@ -14,7 +13,7 @@ const Header = () => {
                         <button className="rounded btn btn_custom mt-3">View Courses</button>
                     </Col>
                     <Col md={7}>
-                        <img src={illustration} alt="Header Illustration" />
+                        <img src="/images/header.svg" alt="Header Illustration" />
                     </Col>
                 </Row>
             </Container>
